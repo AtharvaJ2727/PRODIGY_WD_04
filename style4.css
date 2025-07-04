@@ -1,0 +1,341 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    font-family: 'Poppins', sans-serif;
+    color: #B0B0B0;
+}
+
+/* Header Styling */
+.navbar {
+    width: 100%;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFFFFF;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Vukana Button Styling */
+.vukana-btn {
+    background-color: #0D0D0D;
+    color: #B0B0B0;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(45deg, #FF00FF, #2c07ff);
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 6px;
+}
+
+.vukana-btn:hover {
+    background-color: #50ebe6;
+    color: #0D0D0D;
+    box-shadow: 0 0 10px #2c07ff, 0 0 20px #FF00FF;
+}
+
+
+.connect-header {
+    background-color: #0D0D0D;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #00BFFF;
+}
+
+.connect-header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; /* Adjust transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.video-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.video-content p {
+    font-size: 1.7rem;
+    font-family: 'Rajdhani', sans-serif;
+    margin: 0;
+    color: white;
+    transition: all 0.4s ease;
+    text-align: center;
+    cursor: pointer;
+}
+.video-content p:hover {
+    text-shadow: 0 0 10px #f6ff00, 0 0 20px #f6ff00, 0 0 30px #f6ff00;
+    transform: scale(1.05);
+}
+
+
+
+.connect-info {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.connect-text {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Top Row - Gmail Left, LinkedIn Right */
+.connect-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    flex-wrap: wrap;
+}
+
+/* Bottom Row - GitHub Centered */
+.connect-bottom-row {
+    display: flex;
+    justify-content: center;
+}
+
+.connect-box {
+    text-align: center;
+    max-width: 250px;
+}
+
+.connect-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.connect-label {
+    font-style: italic;
+    color: #999;
+    margin: 5px 0;
+}
+
+.connect-link {
+    color: white;
+    word-break: break-word;
+}
+
+
+.contact-form-section {
+    max-width: 500px;
+    margin: 50px auto;
+    color: white;
+}
+
+.contact-title {
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: 'Oxanium', sans-serif;
+}
+
+.contact-form label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    color: white;
+    background-color: black;
+    font-family: 'Oxanium', sans-serif;
+    font-size: 1rem;
+}
+
+/* Glow Effects - Adjust Brightness */
+#name {
+    box-shadow: 0 0 15px #9900ff, 0 0 30px #9900ff;
+}
+
+#email {
+    box-shadow: 0 0 15px #9900ff, 0 0 30px #9900ff;
+}
+
+#phone {
+    box-shadow: 0 0 15px #9900ff, 0 0 30px #9900ff;
+}
+
+#message {
+    box-shadow: 0 0 15px #00ff55, 0 0 30px #00ff55;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 0 20px white, 0 0 35px white;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px white, 0 0 50px white;
+}
+
+
+.video-section1 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Adjust transparency */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.video-content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/* .video-content1 h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+} */
+
+.video-content1 p {
+    font-size: 2.7rem;
+    font-family: 'Oxanium', sans-serif;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 10px #f6ff00, 0 0 20px #f6ff00, 0 0 30px #f6ff00; 
+    transform: scale(1.05); 
+     transition: all 0.4s ease; 
+    text-align: center;
+    cursor: pointer;
+}
+/* .video-content1 p:hover {
+    text-shadow: 0 0 10px #f6ff00, 0 0 20px #f6ff00, 0 0 30px #f6ff00;
+    transform: scale(1.05);
+} */
+
+
+/* Custom cursor styling */
+body {
+  cursor: auto; /* keep normal arrow */
+}
+
+/* Glowing ring element follows the cursor */
+.custom-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  box-shadow: 0 0 20px #00ffff;
+  animation: glowcycle 6s infinite linear;
+  z-index: 9999;
+}
+
+@keyframes glowcycle {
+  0%   { box-shadow: 0 0 20px #00ffff; }
+  33%  { box-shadow: 0 0 20px #00d0ff; }
+  66%  { box-shadow: 0 0 20px #39ff14; }
+  100% { box-shadow: 0 0 20px #00ffff; }
+}

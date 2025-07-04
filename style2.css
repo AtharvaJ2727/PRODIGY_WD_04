@@ -1,0 +1,328 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0D0D0D;
+    font-family: 'Poppins', sans-serif;
+    color: #B0B0B0;
+}
+
+/* Header Styling */
+.navbar {
+    width: 100%;
+    background-color: #0D0D0D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #B0B0B0;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFFFFF;
+}
+
+/* Logo Styling */
+.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Vukana Button Styling */
+.vukana-btn {
+    background-color: #0D0D0D;
+    color: #B0B0B0;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(45deg, #FF00FF, #2c07ff);
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    border-radius: 6px;
+}
+
+.vukana-btn:hover {
+    background-color: #50ebe6;
+    color: #0D0D0D;
+    box-shadow: 0 0 10px #2c07ff, 0 0 20px #FF00FF;
+}
+
+
+.projects-section {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+}
+
+.projects-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+}
+
+.project-item {
+    margin-top: 20px;
+}
+
+.project-name {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.project-description {
+    font-family: 'Inclusive Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+
+.projects-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 4px solid;
+    border-image: linear-gradient(90deg, magenta, blue) 1;
+    border-radius: 12px;
+}
+
+.project-box {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(0, 251, 255);
+}
+
+.image-slider {
+    display: flex;
+    animation: scrollImages 10s linear infinite;
+}
+
+.image-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+@keyframes scrollImages {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+
+.projects-title1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.3rem;
+    margin-bottom: 50px;
+}
+
+.projects-gallery1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 4px solid;
+    border-image: linear-gradient(90deg, rgb(0, 255, 106), rgb(4, 198, 68)) 1;
+    border-radius: 12px;
+}
+
+.project-box1 {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(183, 0, 255, 0.477);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(149, 0, 255);
+}
+
+.view-more-btn {
+    padding: 8px 18px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #00ffee;
+    background: transparent;
+    border: 2px solid #00ffee;
+    border-radius: 8px;
+    cursor: pointer;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+    bottom: 10px;
+    right: 10px;
+}
+
+.view-more-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,255,238,0.2) 0%, rgba(0,255,238,0.5) 50%, rgba(0,255,238,0.2) 100%);
+    transition: left 0.4s ease;
+}
+
+.view-more-btn:hover {
+    background-color: rgba(0, 255, 238, 0.1);
+    box-shadow: 0 0 20px rgba(0, 255, 238, 0.8);
+}
+
+.view-more-btn:hover::after {
+    left: 100%;
+}
+
+
+.canva-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 4px solid;
+    border-image: linear-gradient(90deg, rgba(229, 255, 0, 0.647), rgb(0, 255, 85)) 1;
+    border-radius: 12px;
+}
+
+.canva-box {
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(30, 0, 255, 0.477);
+    position: relative;
+    gap: 10px;
+}
+
+.canva-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgb(0, 153, 255);
+}
+
+.vertical-slider {
+    display: flex;
+    flex-direction: column;
+    animation: slideVertical 9s infinite;
+}
+
+.vertical-slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Vertical slide animation */
+@keyframes slideVertical {
+    0% { transform: translateY(0); }
+    33% { transform: translateY(-100%); }
+    66% { transform: translateY(-200%); }
+    100% { transform: translateY(0); }
+}
+
+
+.connect-note {
+    text-align: center;
+    font-family: 'Inclusive Sans', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.connect-link {
+    text-decoration: underline;
+    font-weight: 600;
+    color: white; /* Keeps link same color as text */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.connect-link:visited {
+    color: white; /* Prevents purple visited color */
+}
+
+.connect-link:hover {
+    color: #00ffee; /* Optional: subtle glow on hover */
+}
+
+
+
+/* Custom cursor styling */
+body {
+  cursor: auto; /* keep normal arrow */
+}
+
+/* Glowing ring element follows the cursor */
+.custom-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  box-shadow: 0 0 20px #00ffff;
+  animation: glowcycle 6s infinite linear;
+  z-index: 9999;
+}
+
+@keyframes glowcycle {
+  0%   { box-shadow: 0 0 20px #00ffff; }
+  33%  { box-shadow: 0 0 20px #00d0ff; }
+  66%  { box-shadow: 0 0 20px #39ff14; }
+  100% { box-shadow: 0 0 20px #00ffff; }
+}
